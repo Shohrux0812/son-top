@@ -1,8 +1,5 @@
 import random as r
-# son=r.sample(range(0,11),10)
-# print(son)
-# son1=list(map(lambda x:x,son))
-# print(son1)
+n=int(input("O'yinimizda nechta son ishtirok etishini hohlaysiz>>"))
 
 def son_top(n=10):
     print(f"1 dan {n} gacha son o'yladim topa olasizmi sonni kiriting")
@@ -13,13 +10,13 @@ def son_top(n=10):
         taxmin+=1
         # print(son)
         if son<sonlar:
-            print(f"Men o'ylagan son {sonlar} bu sondan kichik")
+            print(f"Men o'ylagan son {sonlar} emas bu sondan kichik")
         elif son>sonlar:
-            print(f"Men o'ylagan son {sonlar} bu sondan katta")
+            print(f"Men o'ylagan son {sonlar} emas bu sondan katta")
         else:
             break
 
-    print(f"Men  {taxmin} ta urunishda topdim endi men son o'ylayman siz toping" )
+    print(f"Men o'ylagan sonni {taxmin} ta urunishda topdingiz endi siz son o'ylayman men topaman" )
     return taxmin
 
 
@@ -62,4 +59,4 @@ def play(n=10):
     return print("GAME OVER")
 
 
-print(play(5))
+print(play(n))
